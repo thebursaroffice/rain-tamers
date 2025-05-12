@@ -59,12 +59,12 @@
             font-size: 24px;
             font-weight: bold;
         }
-        
+
         .rain-drop {
             position: relative;
             display: inline-block;
         }
-        
+
         .rain-drop::after {
             content: "💧";
             position: absolute;
@@ -73,11 +73,22 @@
             font-size: 1.2rem;
             animation: drip 2s infinite;
         }
-        
+
         @keyframes drip {
-            0% { transform: translateY(0) scale(1); opacity: 1; }
-            50% { transform: translateY(10px) scale(0.8); opacity: 0.8; }
-            100% { transform: translateY(20px) scale(0); opacity: 0; }
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(10px) scale(0.8);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(20px) scale(0);
+                opacity: 0;
+            }
         }
 
         .gutter-type {
@@ -103,7 +114,7 @@
                 <div class="flex items-center space-x-4">
                     <a href="index.html">
                         <div class="flex items-center">
-                            <span class="text-2xl font-bold rain-drop">Rain Tamers</span>
+                            <img src="images/Rain Tamers Logo-01.png" alt="Rain Tamers Logo" class="logo">
                         </div>
                     </a>
                 </div>
@@ -121,7 +132,8 @@
                     <a href="index.html" class="text-blue-200 hover:text-white transition">Home</a>
                     <a href="#services" class="text-blue-200 hover:text-white transition">Services</a>
                     <a href="#about" class="text-blue-200 hover:text-white transition">About</a>
-                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">Contact Us</a>
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">Contact
+                        Us</a>
                 </div>
             </div>
         </div>
@@ -131,7 +143,9 @@
                 <a href="index.html" class="block text-blue-200 hover:text-white transition">Home</a>
                 <a href="#services" class="block text-blue-200 hover:text-white transition">Services</a>
                 <a href="#about" class="block text-blue-200 hover:text-white transition">About</a>
-                <a href="#contact" class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition text-center">Contact Us</a>
+                <a href="#contact"
+                    class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition text-center">Contact
+                    Us</a>
             </div>
         </div>
     </nav>
@@ -140,7 +154,8 @@
     <section class="hero-image flex items-center justify-center text-white">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Gutter Repairs & Installations</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Expert solutions to protect your home from water damage with durable, high-performance gutter systems</p>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Expert solutions to protect your home from water damage with
+                durable, high-performance gutter systems</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#contact"
                     class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">Get
@@ -158,16 +173,22 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1600566752227-8a332a0ed3b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Gutter installation" 
-                         class="rounded-xl shadow-lg w-full h-auto">
+                    <img src="images/gutter-repair.jpg" alt="Gutter installation"
+                        class="rounded-xl shadow-lg w-full h-auto">
                 </div>
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl font-bold text-blue-900 mb-6">Comprehensive Gutter Solutions</h2>
-                    <p class="text-gray-600 mb-6">Rain Tamers specializes in both gutter repairs and complete gutter system installations. Whether you need to fix a small section or replace your entire gutter system, our certified technicians deliver exceptional craftsmanship using premium materials.</p>
-                    <p class="text-gray-600 mb-6">We assess your home's specific needs, considering roof size, pitch, local rainfall patterns, and architectural style to recommend the perfect gutter solution that will protect your home for years to come.</p>
+                    <p class="text-gray-600 mb-6">Rain Tamers specializes in both gutter repairs and complete gutter
+                        system installations. Whether you need to fix a small section or replace your entire gutter
+                        system, our certified technicians deliver exceptional craftsmanship using premium materials.</p>
+                    <p class="text-gray-600 mb-6">We assess your home's specific needs, considering roof size, pitch,
+                        local rainfall patterns, and architectural style to recommend the perfect gutter solution that
+                        will protect your home for years to come.</p>
                     <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                        <p class="text-blue-900 font-medium"><i class="fas fa-exclamation-circle text-blue-500 mr-2"></i> Faulty gutters can cause thousands in water damage repairs. Don't wait until it's too late - let our experts evaluate your system today.</p>
+                        <p class="text-blue-900 font-medium"><i
+                                class="fas fa-exclamation-circle text-blue-500 mr-2"></i> Faulty gutters can cause
+                            thousands in water damage repairs. Don't wait until it's too late - let our experts evaluate
+                            your system today.</p>
                     </div>
                 </div>
             </div>
@@ -180,7 +201,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Gutter Repair Services</h2>
                 <div class="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">We fix all types of gutter issues to restore proper function and prevent water damage</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">We fix all types of gutter issues to restore proper function
+                    and prevent water damage</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -189,7 +211,8 @@
                         <i class="fas fa-tools text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Leak Repairs</h3>
-                    <p class="text-gray-600">Sealing joints, patching holes, and fixing cracks in your existing gutters to prevent water leakage and damage to your home's exterior.</p>
+                    <p class="text-gray-600">Sealing joints, patching holes, and fixing cracks in your existing gutters
+                        to prevent water leakage and damage to your home's exterior.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
@@ -197,7 +220,8 @@
                         <i class="fas fa-hammer text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Sagging Gutters</h3>
-                    <p class="text-gray-600">Replacing worn-out hangers, reinforcing fascia boards, and properly re-securing gutters to restore proper pitch and function.</p>
+                    <p class="text-gray-600">Replacing worn-out hangers, reinforcing fascia boards, and properly
+                        re-securing gutters to restore proper pitch and function.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
@@ -205,7 +229,8 @@
                         <i class="fas fa-plug text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Downspout Issues</h3>
-                    <p class="text-gray-600">Fixing disconnected, clogged, or improperly routed downspouts to ensure proper water drainage away from your foundation.</p>
+                    <p class="text-gray-600">Fixing disconnected, clogged, or improperly routed downspouts to ensure
+                        proper water drainage away from your foundation.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
@@ -213,7 +238,8 @@
                         <i class="fas fa-bolt text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Gutter Realignment</h3>
-                    <p class="text-gray-600">Correcting improper gutter slope that causes standing water or overflow, ensuring optimal water flow to downspouts.</p>
+                    <p class="text-gray-600">Correcting improper gutter slope that causes standing water or overflow,
+                        ensuring optimal water flow to downspouts.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
@@ -221,7 +247,8 @@
                         <i class="fas fa-cut text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Section Replacement</h3>
-                    <p class="text-gray-600">Replacing damaged sections of gutter while seamlessly integrating them with your existing system for uniform appearance.</p>
+                    <p class="text-gray-600">Replacing damaged sections of gutter while seamlessly integrating them with
+                        your existing system for uniform appearance.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
@@ -229,7 +256,8 @@
                         <i class="fas fa-shield-alt text-blue-900 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Fascia Repairs</h3>
-                    <p class="text-gray-600">Repairing or replacing rotted fascia boards that support your gutters, ensuring a solid foundation for your gutter system.</p>
+                    <p class="text-gray-600">Repairing or replacing rotted fascia boards that support your gutters,
+                        ensuring a solid foundation for your gutter system.</p>
                 </div>
             </div>
         </div>
@@ -241,14 +269,18 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Gutter Installation Services</h2>
                 <div class="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Premium gutter systems installed with precision for maximum protection and durability</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Premium gutter systems installed with precision for maximum
+                    protection and durability</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold text-blue-900 mb-6">Complete Gutter System Installation</h3>
-                    <p class="text-gray-600 mb-6">When repairs are no longer sufficient or you're building a new home, our complete gutter installations provide the ultimate protection against water damage. We remove your old system (if present) and install a custom-fit gutter system tailored to your home's specific requirements.</p>
-                    
+                    <p class="text-gray-600 mb-6">When repairs are no longer sufficient or you're building a new home,
+                        our complete gutter installations provide the ultimate protection against water damage. We
+                        remove your old system (if present) and install a custom-fit gutter system tailored to your
+                        home's specific requirements.</p>
+
                     <div class="mb-8">
                         <h4 class="text-xl font-semibold text-blue-900 mb-4">Our Installation Process:</h4>
                         <ul class="space-y-3 text-gray-600">
@@ -282,27 +314,33 @@
 
                 <div>
                     <h3 class="text-2xl font-bold text-blue-900 mb-6">Gutter Protection Systems</h3>
-                    <p class="text-gray-600 mb-6">Reduce maintenance and protect your investment with our premium gutter guard installations. We offer various types of gutter protection systems to match your home's needs and local environment.</p>
-                    
+                    <p class="text-gray-600 mb-6">Reduce maintenance and protect your investment with our premium gutter
+                        guard installations. We offer various types of gutter protection systems to match your home's
+                        needs and local environment.</p>
+
                     <div class="grid grid-cols-1 gap-4">
                         <div class="border border-gray-200 rounded-lg p-4 gutter-type">
                             <h4 class="font-bold text-blue-900 mb-2">Micro-Mesh Screens</h4>
-                            <p class="text-gray-600 text-sm">Ultra-fine mesh that blocks even tiny debris while allowing water to flow through freely. Ideal for homes with pine needles or small seeds.</p>
+                            <p class="text-gray-600 text-sm">Ultra-fine mesh that blocks even tiny debris while allowing
+                                water to flow through freely. Ideal for homes with pine needles or small seeds.</p>
                         </div>
-                        
+
                         <div class="border border-gray-200 rounded-lg p-4 gutter-type">
                             <h4 class="font-bold text-blue-900 mb-2">Reverse Curve Systems</h4>
-                            <p class="text-gray-600 text-sm">Uses surface tension to guide water into the gutter while debris slides off. Excellent for heavy leaf areas.</p>
+                            <p class="text-gray-600 text-sm">Uses surface tension to guide water into the gutter while
+                                debris slides off. Excellent for heavy leaf areas.</p>
                         </div>
-                        
+
                         <div class="border border-gray-200 rounded-lg p-4 gutter-type">
                             <h4 class="font-bold text-blue-900 mb-2">Foam Inserts</h4>
-                            <p class="text-gray-600 text-sm">Porous foam that fits inside gutters, blocking debris while allowing water to filter through. Easy to remove and clean.</p>
+                            <p class="text-gray-600 text-sm">Porous foam that fits inside gutters, blocking debris while
+                                allowing water to filter through. Easy to remove and clean.</p>
                         </div>
-                        
+
                         <div class="border border-gray-200 rounded-lg p-4 gutter-type">
                             <h4 class="font-bold text-blue-900 mb-2">Brush Inserts</h4>
-                            <p class="text-gray-600 text-sm">Large bristles that catch debris while letting water pass. Simple solution for moderate debris areas.</p>
+                            <p class="text-gray-600 text-sm">Large bristles that catch debris while letting water pass.
+                                Simple solution for moderate debris areas.</p>
                         </div>
                     </div>
                 </div>
@@ -316,7 +354,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Gutter Material Options</h2>
                 <div class="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">We offer various gutter materials to suit your budget, climate, and aesthetic preferences</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer various gutter materials to suit your budget,
+                    climate, and aesthetic preferences</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -325,7 +364,8 @@
                         <i class="fas fa-shield-alt text-blue-900 text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Aluminum</h3>
-                    <p class="text-gray-600 mb-4">Lightweight, rust-proof, and available in various colors. Our most popular choice for residential homes.</p>
+                    <p class="text-gray-600 mb-4">Lightweight, rust-proof, and available in various colors. Our most
+                        popular choice for residential homes.</p>
                     <p class="text-blue-900 font-semibold">$6 - $12 per linear foot</p>
                 </div>
 
@@ -334,7 +374,8 @@
                         <i class="fas fa-gem text-blue-900 text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Copper</h3>
-                    <p class="text-gray-600 mb-4">Premium material that develops a beautiful patina over time. Extremely durable and long-lasting.</p>
+                    <p class="text-gray-600 mb-4">Premium material that develops a beautiful patina over time. Extremely
+                        durable and long-lasting.</p>
                     <p class="text-blue-900 font-semibold">$15 - $25 per linear foot</p>
                 </div>
 
@@ -343,7 +384,8 @@
                         <i class="fas fa-industry text-blue-900 text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Steel</h3>
-                    <p class="text-gray-600 mb-4">Stronger than aluminum, ideal for areas with heavy snow loads or extreme weather conditions.</p>
+                    <p class="text-gray-600 mb-4">Stronger than aluminum, ideal for areas with heavy snow loads or
+                        extreme weather conditions.</p>
                     <p class="text-blue-900 font-semibold">$9 - $20 per linear foot</p>
                 </div>
 
@@ -352,13 +394,16 @@
                         <i class="fas fa-infinity text-blue-900 text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-3">Seamless</h3>
-                    <p class="text-gray-600 mb-4">Custom-formed on-site for a perfect fit with fewer leaks. Available in aluminum or steel.</p>
+                    <p class="text-gray-600 mb-4">Custom-formed on-site for a perfect fit with fewer leaks. Available in
+                        aluminum or steel.</p>
                     <p class="text-blue-900 font-semibold">$7 - $15 per linear foot</p>
                 </div>
             </div>
 
             <div class="mt-12 bg-blue-50 p-6 rounded-lg max-w-3xl mx-auto">
-                <p class="text-blue-900 text-center"><i class="fas fa-info-circle text-blue-500 mr-2"></i> <strong>Note:</strong> Final pricing depends on gutter size (5" or 6"), installation complexity, and additional features like gutter guards. Contact us for a precise quote tailored to your home.</p>
+                <p class="text-blue-900 text-center"><i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                    <strong>Note:</strong> Final pricing depends on gutter size (5" or 6"), installation complexity, and
+                    additional features like gutter guards. Contact us for a precise quote tailored to your home.</p>
             </div>
         </div>
     </section>
@@ -378,7 +423,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Certified Experts</h3>
-                        <p class="text-gray-600">Our technicians are factory-trained and certified in gutter installation best practices.</p>
+                        <p class="text-gray-600">Our technicians are factory-trained and certified in gutter
+                            installation best practices.</p>
                     </div>
                 </div>
 
@@ -388,7 +434,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Premium Materials</h3>
-                    <p class="text-gray-600">We use only top-quality materials from trusted manufacturers with extended warranties.</p>
+                        <p class="text-gray-600">We use only top-quality materials from trusted manufacturers with
+                            extended warranties.</p>
                     </div>
                 </div>
 
@@ -398,7 +445,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Precision Work</h3>
-                        <p class="text-gray-600">Every installation meets strict quality standards for proper pitch, secure fastening, and optimal performance.</p>
+                        <p class="text-gray-600">Every installation meets strict quality standards for proper pitch,
+                            secure fastening, and optimal performance.</p>
                     </div>
                 </div>
 
@@ -408,7 +456,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Timely Service</h3>
-                        <p class="text-gray-600">We respect your time with prompt arrivals and efficient, thorough work completed as scheduled.</p>
+                        <p class="text-gray-600">We respect your time with prompt arrivals and efficient, thorough work
+                            completed as scheduled.</p>
                     </div>
                 </div>
 
@@ -418,7 +467,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Full Protection</h3>
-                        <p class="text-gray-600">Comprehensive solutions including proper downspout extensions to direct water away from your foundation.</p>
+                        <p class="text-gray-600">Comprehensive solutions including proper downspout extensions to direct
+                            water away from your foundation.</p>
                     </div>
                 </div>
 
@@ -428,7 +478,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Satisfaction Guarantee</h3>
-                        <p class="text-gray-600">We stand behind our work with a 100% satisfaction guarantee on all repairs and installations.</p>
+                        <p class="text-gray-600">We stand behind our work with a 100% satisfaction guarantee on all
+                            repairs and installations.</p>
                     </div>
                 </div>
             </div>
@@ -440,7 +491,8 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for Dependable Gutter Protection?</h2>
-                <p class="text-xl mb-8">Whether you need repairs or a complete new gutter system, Rain Tamers delivers expert solutions tailored to your home. Schedule your free estimate today!</p>
+                <p class="text-xl mb-8">Whether you need repairs or a complete new gutter system, Rain Tamers delivers
+                    expert solutions tailored to your home. Schedule your free estimate today!</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="tel:+19726260579"
                         class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg text-lg font-semibold transition">
@@ -528,9 +580,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <div class="flex items-center">
-                        <span class="text-2xl font-bold rain-drop">Rain Tamers</span>
+                        <img src="images/Rain Tamers Logo-01.png" alt="Rain Tamers Logo" class="logo">
                     </div>
-                    <p class="text-blue-200 mt-4">Expert gutter repairs and installations to protect your home from water damage in the Pacific Northwest.</p>
+                    <p class="text-blue-200 mt-4">Expert gutter repairs and installations to protect your home from
+                        water damage in the Pacific Northwest.</p>
                 </div>
 
                 <div>
