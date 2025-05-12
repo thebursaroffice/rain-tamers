@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rain Tamers - Premium Roofing Solutions</title>
+    <title>Rain Tamers - Premium Gutter Cleaning Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Custom CSS for elements that need more precise control */
         .hero-image {
             background-image: linear-gradient(rgba(8, 42, 83, 0.7), rgba(8, 42, 83, 0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             min-height: 70vh;
         }
-        
+
+        /* Logo sizing - Updated */
+        .logo {
+            height: 70px;
+            /* Adjust this value to change logo size */
+            width: auto;
+            margin: -0.5rem 0;
+            /* Keeps navbar height unchanged */
+            object-fit: contain;
+        }
+
+        .footer-logo {
+            height: 100px;
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        
+
         .fade-in {
             animation: fadeIn 1s ease-in-out;
         }
     </style>
 </head>
+
 <body class="font-sans bg-white text-gray-800">
-    <!-- Navigation -->
+    <!-- Navigation with resized logo -->
     <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <div class="flex items-center">
-                        <i class="fas fa-cloud-rain text-blue-300 text-2xl mr-2"></i>
-                        <span class="font-bold text-xl">Rain Tamers</span>
-                    </div>
+                    <img src="images/Rain Tamers Logo-01.png" alt="Rain Tamers Logo" class="logo">
                 </div>
-                
-                <!-- Mobile menu button -->
+
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
-                
-                <!-- Desktop Menu -->
+
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#" class="text-blue-200 hover:text-white transition">Home</a>
                     <a href="#services" class="text-blue-200 hover:text-white transition">Services</a>
                     <a href="#about" class="text-blue-200 hover:text-white transition">About</a>
-                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">Contact Us</a>
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">Contact
+                        Us</a>
                 </div>
             </div>
         </div>
-        
-        <!-- Mobile Menu -->
+
         <div class="hidden mobile-menu bg-blue-800">
             <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
                 <a href="#" class="block text-blue-200 hover:text-white transition">Home</a>
                 <a href="#services" class="block text-blue-200 hover:text-white transition">Services</a>
                 <a href="#about" class="block text-blue-200 hover:text-white transition">About</a>
-                <a href="#contact" class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition text-center">Contact Us</a>
+                <a href="#contact"
+                    class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition text-center">Contact
+                    Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Cover Photo Space -->
+    <!-- Hero Section -->
     <section class="hero-image flex items-center justify-center text-white fade-in">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Roof, Our Expertise</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Protecting your home from the elements with premium roofing solutions since 2005.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Clean Gutters, Protected Home</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Preventing water damage with professional gutter
+                cleaning services since 2005.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">Get a Free Quote</a>
-                <a href="#services" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold transition">Our Services</a>
+                <a href="#contact"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition">Get
+                    a Free Quote</a>
+                <a href="#services"
+                    class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold transition">Our
+                    Services</a>
             </div>
         </div>
     </section>
@@ -88,44 +113,46 @@
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Roofing Services</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Gutter Services</h2>
                 <div class="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive roofing solutions tailored to your specific needs and budget.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive gutter cleaning and maintenance solutions to
+                    protect your home.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
                     <div class="h-48 bg-blue-100 flex items-center justify-center">
                         <i class="fas fa-home text-blue-900 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Residential Roofing</h3>
-                        <p class="text-gray-600 mb-4">Expert installation and repair of all types of residential roofing systems including asphalt shingles, metal, and tile.</p>
-                        <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 transition">Learn More →</a>
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Residential Gutter Cleaning</h3>
+                        <p class="text-gray-600 mb-4">Thorough cleaning of residential gutters to prevent water damage,
+                            including debris removal and downspout flushing.</p>
+                        <a href="residential-gutter-cleaning.html"
+                            class="text-blue-500 font-semibold hover:text-blue-700 transition">Learn More →</a>
                     </div>
                 </div>
-                
-                <!-- Service 2 -->
+
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
                     <div class="h-48 bg-blue-100 flex items-center justify-center">
                         <i class="fas fa-building text-blue-900 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Commercial Roofing</h3>
-                        <p class="text-gray-600 mb-4">Durable and cost-effective roofing solutions for businesses, from flat roofs to specialized commercial systems.</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Commercial Gutter Maintenance</h3>
+                        <p class="text-gray-600 mb-4">Professional gutter cleaning for commercial properties to maintain
+                            proper drainage and prevent structural damage.</p>
                         <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 transition">Learn More →</a>
                     </div>
                 </div>
-                
-                <!-- Service 3 -->
+
                 <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
                     <div class="h-48 bg-blue-100 flex items-center justify-center">
                         <i class="fas fa-tools text-blue-900 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Roof Repairs</h3>
-                        <p class="text-gray-600 mb-4">Prompt and reliable repair services to fix leaks, storm damage, and other roofing issues before they become major problems.</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Gutter Repairs & Installations</h3>
+                        <p class="text-gray-600 mb-4">Expert repairs for damaged gutters and professional installation
+                            of new gutter systems with proper water flow.</p>
                         <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 transition">Learn More →</a>
                     </div>
                 </div>
@@ -140,8 +167,9 @@
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Choose Rain Tamers?</h2>
                     <div class="w-24 h-1 bg-blue-300 mb-6"></div>
-                    <p class="text-blue-100 mb-6">With over 15 years of experience in the roofing industry, Rain Tamers has established itself as a trusted name in quality roofing solutions.</p>
-                    
+                    <p class="text-blue-100 mb-6">With over 15 years of experience in gutter cleaning and maintenance,
+                        Rain Tamers has established itself as a trusted name in protecting homes from water damage.</p>
+
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <div class="bg-blue-700 p-2 rounded-full mr-4 mt-1">
@@ -152,31 +180,33 @@
                                 <p class="text-blue-100">Full coverage for your peace of mind on every project.</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-700 p-2 rounded-full mr-4 mt-1">
                                 <i class="fas fa-check text-blue-300"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg mb-1">Quality Materials</h4>
-                                <p class="text-blue-100">We use only premium materials from trusted manufacturers.</p>
+                                <h4 class="font-bold text-lg mb-1">Advanced Equipment</h4>
+                                <p class="text-blue-100">We use professional-grade tools for thorough cleaning without
+                                    damage.</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-700 p-2 rounded-full mr-4 mt-1">
                                 <i class="fas fa-check text-blue-300"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg mb-1">Warranty Protected</h4>
-                                <p class="text-blue-100">Comprehensive warranties on both materials and workmanship.</p>
+                                <h4 class="font-bold text-lg mb-1">Satisfaction Guaranteed</h4>
+                                <p class="text-blue-100">We stand behind our work with a 100% satisfaction guarantee.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-1/2 bg-white rounded-xl overflow-hidden shadow-xl">
-                    <img src="images/family.jpg" alt="Happy family protected by Rain Tamers roofing" class="w-full h-auto">
+                    <img src="images/family.jpg" alt="Professional gutter cleaning service" class="w-full h-auto">
                 </div>
             </div>
         </div>
@@ -185,9 +215,12 @@
     <!-- CTA Section -->
     <section class="py-16 bg-blue-700 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Protect Your Property?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact Rain Tamers today for a free, no-obligation roofing assessment.</p>
-            <a href="#contact" class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg text-lg font-semibold transition">Get Your Free Quote</a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Protect Your Home?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact Rain Tamers today for a free, no-obligation gutter
+                assessment.</p>
+            <a href="#contact"
+                class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg text-lg font-semibold transition">Get
+                Your Free Quote</a>
         </div>
     </section>
 
@@ -198,7 +231,7 @@
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Contact Us</h2>
                     <div class="w-24 h-1 bg-blue-500 mb-6"></div>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-full mr-4">
@@ -206,35 +239,36 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg mb-1">Our Location</h4>
-                                <p class="text-gray-600">123 Roofing Street, Suite 100<br>Seattle, WA 98101</p>
+                                <p class="text-gray-600"> Address<br>City, Texas ZIP</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-full mr-4">
                                 <i class="fas fa-phone-alt text-blue-900"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg mb-1">Call Us</h4>
-                                <p class="text-gray-600">(206) 555-ROOF (7663)<br>Mon-Fri: 8am - 5pm</p>
+                                <p class="text-gray-600">(972) 626-0579<br>Mon-Fri: 8am - 5pm</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-full mr-4">
                                 <i class="fas fa-envelope text-blue-900"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg mb-1">Email Us</h4>
-                                <p class="text-gray-600">info@raintamers.com<br>We respond within 24 hours</p>
+                                <p class="text-gray-600">admin@raintamers.com<br>We respond within 24 hours</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-10">
                         <h4 class="font-bold text-lg mb-4">Follow Us</h4>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-900 p-3 rounded-full transition">
+                            <a href="https://facebook.com/raintamers" target="_blank"
+                                class="bg-blue-100 hover:bg-blue-200 text-blue-900 p-3 rounded-full transition">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             <a href="#" class="bg-blue-100 hover:bg-blue-200 text-blue-900 p-3 rounded-full transition">
@@ -249,45 +283,51 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-blue-900 mb-6">Send Us a Message</h3>
-                    <form action="https://formsubmit.co/samarsiddiqui0110@gmail.com" method="POST">
-                        <!-- Hidden FormSubmit Config -->
+                    <form action="https://formsubmit.co/your-email@example.com" method="POST">
                         <input type="hidden" name="_subject" value="New Contact Form Submission - Rain Tamers">
-                        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your thank-you page -->
-                        <input type="text" name="_honey" style="display:none"> <!-- Honeypot for spam -->
-                        
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                        <input type="text" name="_honey" style="display:none">
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Name*</label>
-                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-700 mb-2">Email*</label>
-                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                         </div>
                         <div class="mb-6">
                             <label for="phone" class="block text-gray-700 mb-2">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
                         <div class="mb-6">
                             <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
-                            <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <select id="service" name="service"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option value="">Select a service</option>
-                                <option value="residential">Residential Roofing</option>
-                                <option value="commercial">Commercial Roofing</option>
-                                <option value="repairs">Roof Repairs</option>
-                                <option value="inspection">Roof Inspection</option>
+                                <option value="residential">Residential Gutter Cleaning</option>
+                                <option value="commercial">Commercial Gutter Cleaning</option>
+                                <option value="repairs">Gutter Repairs</option>
+                                <option value="installation">Gutter Installation</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 mb-2">Message*</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition">Send Message</button>
+                        <button type="submit"
+                            class="w-full bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
@@ -297,15 +337,13 @@
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-cloud-rain text-blue-300 text-2xl mr-2"></i>
-                        Rain Tamers
-                    </h3>
-                    <p class="text-blue-200">Your trusted partner for premium roofing solutions in the Pacific Northwest.</p>
+                    <img src="images/Rain Tamers Logo-01.png" alt="Rain Tamers Logo" class="footer-logo">
+                    <p class="text-blue-200">Your trusted partner for premium gutter cleaning solutions in the Pacific
+                        Northwest.</p>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-lg mb-4">Quick Links</h4>
                     <ul class="space-y-2">
@@ -315,30 +353,21 @@
                         <li><a href="#contact" class="text-blue-200 hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-lg mb-4">Services</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-blue-200 hover:text-white transition">Residential Roofing</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition">Commercial Roofing</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition">Roof Repairs</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition">Roof Inspections</a></li>
-                        <li><a href="#" class="text-blue-200 hover:text-white transition">Emergency Services</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Residential Gutter
+                                Cleaning</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Commercial Gutter Cleaning</a>
+                        </li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Gutter Repairs</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Gutter Installation</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Seasonal Maintenance</a></li>
                     </ul>
                 </div>
-                
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Newsletter</h4>
-                    <p class="text-blue-200 mb-4">Subscribe to our newsletter for roofing tips and special offers.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
-                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r-lg transition">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
             </div>
-            
+
             <div class="border-t border-blue-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-blue-300 mb-4 md:mb-0">© 2023 Rain Tamers. All rights reserved.</p>
                 <div class="flex space-x-6">
@@ -351,7 +380,8 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-900 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 bg-blue-900 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -359,34 +389,34 @@
         // Mobile menu toggle
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const mobileMenu = document.querySelector('.mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     mobileMenu.classList.add('hidden');
                 }
             });
         });
-        
+
         // Back to top button
         const backToTopButton = document.getElementById('backToTop');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.remove('opacity-0', 'invisible');
@@ -396,7 +426,7 @@
                 backToTopButton.classList.add('opacity-0', 'invisible');
             }
         });
-        
+
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -405,4 +435,5 @@
         });
     </script>
 </body>
+
 </html>
