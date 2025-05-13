@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Gutter Repairs &amp; Installations | Rain Tamers
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .hero-image {
+            background-image: linear-gradient(rgba(8, 42, 83, 0.7), rgba(8, 42, 83, 0.7)), url('https://images.unsplash.com/photo-1426927308491-6380b6a9936f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+        }
+
+        .logo {
+            height: 70px;
+            width: auto;
+            margin: -0.5rem 0;
+            object-fit: contain;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-icon {
+            background-color: rgba(29, 78, 216, 0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 2rem;
+        }
+
+        .process-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: #1d4ed8;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rain-drop {
+            position: relative;
+            display: inline-block;
+        }
+
+        .rain-drop::after {
+            content: "💧";
+            position: absolute;
+            right: -20px;
+            top: -10px;
+            font-size: 1.2rem;
+            animation: drip 2s infinite;
+        }
+
+        @keyframes drip {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(10px) scale(0.8);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(20px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .gutter-type {
+            transition: all 0.3s ease;
+        }
+
+        .gutter-type:hover {
+            transform: scale(1.03);
+        }
+
+        .gutter-type.active {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.5);
+        }
+  </style>
+ </head>
+ <body class="font-sans bg-white text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+   <div class="container mx-auto px-6 py-3">
+    <div class="flex justify-between items-center">
+     <div class="flex items-center space-x-4">
+      <a href="index.html">
+       <div class="flex items-center">
+        <img alt="Rain Tamers Logo" class="logo" src="images/Rain Tamers Logo-01.png"/>
+       </div>
+      </a>
+     </div>
+     <div class="md:hidden flex items-center">
+      <button class="outline-none mobile-menu-button">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        </path>
+       </svg>
+      </button>
+     </div>
+     <div class="hidden md:flex items-center space-x-8">
+      <a class="text-blue-200 hover:text-white transition" href="index.html">
+       Home
+      </a>
+      <a class="text-blue-200 hover:text-white transition" href="#services">
+       Services
+      </a>
+      <a class="text-blue-200 hover:text-white transition" href="#about">
+       About
+      </a>
+      <a class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition" href="#contact">
+       Contact
+                        Us
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="hidden mobile-menu bg-blue-800">
+    <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+     <a class="block text-blue-200 hover:text-white transition" href="index.html">
+      Home
+     </a>
+     <a class="block text-blue-200 hover:text-white transition" href="#services">
+      Services
+     </a>
+     <a class="block text-blue-200 hover:text-white transition" href="#about">
+      About
+     </a>
+     <a class="block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition text-center" href="#contact">
+      Contact
+                    Us
+     </a>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero-image flex items-center justify-center text-white">
+   <div class="container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+     Gutter Repairs &amp; Installations
+    </h1>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">
+     Expert solutions to protect your home from water damage with
+                durable, high-performance gutter systems
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+     <a class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition" href="#contact">
+      Get
+                    a Free Quote
+     </a>
+     <a class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold transition" href="tel:+19726260579">
+      <i class="fas fa-phone mr-2">
+      </i>
+      (972) 626-0579
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Service Overview -->
+  <section class="py-16 bg-white" id="services">
+   <div class="container mx-auto px-6">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+     <div class="lg:w-1/2">
+      <img alt="Gutter installation" class="rounded-xl shadow-lg w-full h-auto" src="images/gutter-repair.jpg"/>
+     </div>
+     <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">
+       Comprehensive Gutter Solutions
+      </h2>
+      <p class="text-gray-600 mb-6">
+       Rain Tamers specializes in both gutter repairs and complete gutter
+                        system installations. Whether you need to fix a small section or replace your entire gutter
+                        system, our certified technicians deliver exceptional craftsmanship using premium materials.
+      </p>
+      <p class="text-gray-600 mb-6">
+       We assess your home's specific needs, considering roof size, pitch,
+                        local rainfall patterns, and architectural style to recommend the perfect gutter solution that
+                        will protect your home for years to come.
+      </p>
+      <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+       <p class="text-blue-900 font-medium">
+        <i class="fas fa-exclamation-circle text-blue-500 mr-2">
+        </i>
+        Faulty gutters can cause
+                            thousands in water damage repairs. Don't wait until it's too late - let our experts evaluate
+                            your system today.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Repair Services -->
+  <section class="py-16 bg-gray-50">
+   <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-3xl font-bold text-blue-900 mb-4">
+      Gutter Repair Services
+     </h2>
+     <div class="w-24 h-1 bg-blue-500 mx-auto mb-6">
+     </div>
+     <p class="text-gray-600 max-w-2xl mx-auto">
+      We fix all types of gutter issues to restore proper function
+                    and prevent water damage
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-tools text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Leak Repairs
+      </h3>
+      <p class="text-gray-600">
+       Sealing joints, patching holes, and fixing cracks in your existing gutters
+                        to prevent water leakage and damage to your home's exterior.
+      </p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-hammer text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Sagging Gutters
+      </h3>
+      <p class="text-gray-600">
+       Replacing worn-out hangers, reinforcing fascia boards, and properly
+                        re-securing gutters to restore proper pitch and function.
+      </p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-plug text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Downspout Issues
+      </h3>
+      <p class="text-gray-600">
+       Fixing disconnected, clogged, or improperly routed downspouts to ensure
+                        proper water drainage away from your foundation.
+      </p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-bolt text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Gutter Realignment
+      </h3>
+      <p class="text-gray-600">
+       Correcting improper gutter slope that causes standing water or overflow,
+                        ensuring optimal water flow to downspouts.
+      </p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-cut text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Section Replacement
+      </h3>
+      <p class="text-gray-600">
+       Replacing damaged sections of gutter while seamlessly integrating them with
+                        your existing system for uniform appearance.
+      </p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-sm service-card transition duration-300">
+      <div class="benefit-icon">
+       <i class="fas fa-shield-alt text-blue-900 text-2xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Fascia Repairs
+      </h3>
+      <p class="text-gray-600">
+       Repairing or replacing rotted fascia boards that support your gutters,
+                        ensuring a solid foundation for your gutter system.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Installation Services -->
+  <section class="py-16 bg-white">
+   <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-3xl font-bold text-blue-900 mb-4">
+      Gutter Installation Services
+     </h2>
+     <div class="w-24 h-1 bg-blue-500 mx-auto mb-6">
+     </div>
+     <p class="text-gray-600 max-w-2xl mx-auto">
+      Premium gutter systems installed with precision for maximum
+                    protection and durability
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+     <div>
+      <h3 class="text-2xl font-bold text-blue-900 mb-6">
+       Complete Gutter System Installation
+      </h3>
+      <p class="text-gray-600 mb-6">
+       When repairs are no longer sufficient or you're building a new home,
+                        our complete gutter installations provide the ultimate protection against water damage. We
+                        remove your old system (if present) and install a custom-fit gutter system tailored to your
+                        home's specific requirements.
+      </p>
+      <div class="mb-8">
+       <h4 class="text-xl font-semibold text-blue-900 mb-4">
+        Our Installation Process:
+       </h4>
+       <ul class="space-y-3 text-gray-600">
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Precise measurements and water flow calculations
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Custom fabrication (for seamless gutters) or precision cutting
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Proper slope calculation for optimal water flow
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Secure mounting with heavy-duty hangers
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Strategic downspout placement for proper drainage
+         </span>
+        </li>
+        <li class="flex items-start">
+         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2">
+         </i>
+         <span>
+          Final testing and adjustments
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-2xl font-bold text-blue-900 mb-6">
+       Gutter Protection Systems
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Reduce maintenance and protect your investment with our premium gutter
+                        guard installations. We offer various types of gutter protection systems to match your home's
+                        needs and local environment.
+      </p>
+      <div class="grid grid-cols-1 gap-4">
+       <div class="border border-gray-200 rounded-lg p-4 gutter-type">
+        <h4 class="font-bold text-blue-900 mb-2">
+         Micro-Mesh Screens
+        </h4>
+        <p class="text-gray-600 text-sm">
+         Ultra-fine mesh that blocks even tiny debris while allowing
+                                water to flow through freely. Ideal for homes with pine needles or small seeds.
+        </p>
+       </div>
+       <div class="border border-gray-200 rounded-lg p-4 gutter-type">
+        <h4 class="font-bold text-blue-900 mb-2">
+         Reverse Curve Systems
+        </h4>
+        <p class="text-gray-600 text-sm">
+         Uses surface tension to guide water into the gutter while
+                                debris slides off. Excellent for heavy leaf areas.
+        </p>
+       </div>
+       <div class="border border-gray-200 rounded-lg p-4 gutter-type">
+        <h4 class="font-bold text-blue-900 mb-2">
+         Foam Inserts
+        </h4>
+        <p class="text-gray-600 text-sm">
+         Porous foam that fits inside gutters, blocking debris while
+                                allowing water to filter through. Easy to remove and clean.
+        </p>
+       </div>
+       <div class="border border-gray-200 rounded-lg p-4 gutter-type">
+        <h4 class="font-bold text-blue-900 mb-2">
+         Brush Inserts
+        </h4>
+        <p class="text-gray-600 text-sm">
+         Large bristles that catch debris while letting water pass.
+                                Simple solution for moderate debris areas.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Gutter Types -->
+  <section class="py-16 bg-gray-50">
+   <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-3xl font-bold text-blue-900 mb-4">
+      Gutter Material Options
+     </h2>
+     <div class="w-24 h-1 bg-blue-500 mx-auto mb-6">
+     </div>
+     <p class="text-gray-600 max-w-2xl mx-auto">
+      We offer various gutter materials to suit your budget,
+                    climate, and aesthetic preferences
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+      <div class="h-16 mb-4 flex items-center justify-center">
+       <i class="fas fa-shield-alt text-blue-900 text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Aluminum
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Lightweight, rust-proof, and available in various colors. Our most
+                        popular choice for residential homes.
+      </p>
+      <p class="text-blue-900 font-semibold">
+       $6 - $12 per linear foot
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+      <div class="h-16 mb-4 flex items-center justify-center">
+       <i class="fas fa-gem text-blue-900 text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Copper
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Premium material that develops a beautiful patina over time. Extremely
+                        durable and long-lasting.
+      </p>
+      <p class="text-blue-900 font-semibold">
+       $15 - $25 per linear foot
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+      <div class="h-16 mb-4 flex items-center justify-center">
+       <i class="fas fa-industry text-blue-900 text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Steel
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Stronger than aluminum, ideal for areas with heavy snow loads or
+                        extreme weather conditions.
+      </p>
+      <p class="text-blue-900 font-semibold">
+       $9 - $20 per linear foot
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+      <div class="h-16 mb-4 flex items-center justify-center">
+       <i class="fas fa-infinity text-blue-900 text-4xl">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold text-blue-900 mb-3">
+       Seamless
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Custom-formed on-site for a perfect fit with fewer leaks. Available in
+                        aluminum or steel.
+      </p>
+      <p class="text-blue-900 font-semibold">
+       $7 - $15 per linear foot
+      </p>
+     </div>
+    </div>
+    <div class="mt-12 bg-blue-50 p-6 rounded-lg max-w-3xl mx-auto">
+     <p class="text-blue-900 text-center">
+      <i class="fas fa-info-circle text-blue-500 mr-2">
+      </i>
+      <strong>
+       Note:
+      </strong>
+      Final pricing depends on gutter size (5" or 6"), installation complexity, and
+                    additional features like gutter guards. Contact us for a precise quote tailored to your home.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Why Choose Us -->
+  <section class="py-16 bg-white" id="about">
+   <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+     <h2 class="text-3xl font-bold text-blue-900 mb-4">
+      Why Choose Rain Tamers
+     </h2>
+     <div class="w-24 h-1 bg-blue-500 mx-auto mb-6">
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-award text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Certified Experts
+       </h3>
+       <p class="text-gray-600">
+        Our technicians are factory-trained and certified in gutter
+                            installation best practices.
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-medal text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Premium Materials
+       </h3>
+       <p class="text-gray-600">
+        We use only top-quality materials from trusted manufacturers with
+                            extended warranties.
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-clipboard-check text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Precision Work
+       </h3>
+       <p class="text-gray-600">
+        Every installation meets strict quality standards for proper pitch,
+                            secure fastening, and optimal performance.
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-calendar-alt text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Timely Service
+       </h3>
+       <p class="text-gray-600">
+        We respect your time with prompt arrivals and efficient, thorough work
+                            completed as scheduled.
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-shield-alt text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Full Protection
+       </h3>
+       <p class="text-gray-600">
+        Comprehensive solutions including proper downspout extensions to direct
+                            water away from your foundation.
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start">
+      <div class="bg-blue-100 p-3 rounded-full mr-4">
+       <i class="fas fa-thumbs-up text-blue-900 text-xl">
+       </i>
+      </div>
+      <div>
+       <h3 class="text-xl font-bold text-blue-900 mb-2">
+        Satisfaction Guarantee
+       </h3>
+       <p class="text-gray-600">
+        We stand behind our work with a 100% satisfaction guarantee on all
+                            repairs and installations.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-700 text-white" id="contact">
+   <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      Ready for Dependable Gutter Protection?
+     </h2>
+     <p class="text-xl mb-8">
+      Whether you need repairs or a complete new gutter system, Rain Tamers delivers
+                    expert solutions tailored to your home. Schedule your free estimate today!
+     </p>
+     <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg text-lg font-semibold transition" href="tel:+19726260579">
+       <i class="fas fa-phone mr-2">
+       </i>
+       (972) 626-0579
+      </a>
+      <a class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg text-lg font-semibold transition" href="#contact-form">
+       <i class="fas fa-envelope mr-2">
+       </i>
+       Email Us
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Form -->
+  <section class="py-16 bg-gray-50">
+   <div class="container mx-auto px-6">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+     <h2 class="text-2xl font-bold text-blue-900 mb-6" id="contact-form">
+      Request a Free Quote
+     </h2>
+     <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input name="_subject" type="hidden" value="New Gutter Repair/Installation Quote Request"/>
+      <input name="_next" type="hidden" value="https://yourwebsite.com/thank-you.html"/>
+      <input name="_honey" style="display:none" type="text"/>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+       <div>
+        <label class="block text-gray-700 mb-2" for="name">
+         Name*
+        </label>
+        <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" required="" type="text"/>
+       </div>
+       <div>
+        <label class="block text-gray-700 mb-2" for="email">
+         Email*
+        </label>
+        <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" required="" type="email"/>
+       </div>
+      </div>
+      <div class="mb-6">
+       <label class="block text-gray-700 mb-2" for="phone">
+        Phone*
+       </label>
+       <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="phone" name="phone" required="" type="tel"/>
+      </div>
+      <div class="mb-6">
+       <label class="block text-gray-700 mb-2" for="address">
+        Property Address*
+       </label>
+       <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="address" name="address" required="" type="text"/>
+      </div>
+      <div class="mb-6">
+       <label class="block text-gray-700 mb-2">
+        Service Needed*
+       </label>
+       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <label class="flex items-center">
+         <input class="mr-2" name="service[]" type="checkbox" value="Repairs"/>
+         <span>
+          Gutter Repairs
+         </span>
+        </label>
+        <label class="flex items-center">
+         <input class="mr-2" name="service[]" type="checkbox" value="New Installation"/>
+         <span>
+          New Installation
+         </span>
+        </label>
+        <label class="flex items-center">
+         <input class="mr-2" name="service[]" type="checkbox" value="Gutter Guards"/>
+         <span>
+          Gutter Guards
+         </span>
+        </label>
+        <label class="flex items-center">
+         <input class="mr-2" name="service[]" type="checkbox" value="Not Sure"/>
+         <span>
+          Not Sure - Need Assessment
+         </span>
+        </label>
+       </div>
+      </div>
+      <div class="mb-6">
+       <label class="block text-gray-700 mb-2" for="message">
+        Additional Details
+       </label>
+       <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" name="message" placeholder="Describe your gutter issues, preferred materials, or any special requirements..." rows="4"></textarea>
+      </div>
+      <button class="w-full bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition" type="submit">
+       Request
+                        Quote
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-12">
+   <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div>
+      <div class="flex items-center">
+       <span class="text-2xl font-bold rain-drop">
+        Rain Tamers
+       </span>
+      </div>
+      <p class="text-blue-200 mt-4">
+       Expert gutter repairs and installations to protect your home from
+                        water damage in the Pacific Northwest.
+      </p>
+     </div>
+     <div>
+      <h4 class="font-bold text-lg mb-4">
+       Quick Links
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-blue-200 hover:text-white transition" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="text-blue-200 hover:text-white transition" href="#services">
+         Services
+        </a>
+       </li>
+       <li>
+        <a class="text-blue-200 hover:text-white transition" href="#about">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="text-blue-200 hover:text-white transition" href="#contact">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="font-bold text-lg mb-4">
+       Contact Info
+      </h4>
+      <ul class="space-y-2 text-blue-200">
+       <li class="flex items-start">
+        <i class="fas fa-map-marker-alt mt-1 mr-3">
+        </i>
+        <span>
+         123 Gutter Lane, Suite 100
+         <br/>
+         Seattle, WA 98101
+        </span>
+       </li>
+       <li class="flex items-center">
+        <i class="fas fa-phone-alt mr-3">
+        </i>
+        <span>
+         (972) 626-0579
+        </span>
+       </li>
+       <li class="flex items-center">
+        <i class="fas fa-envelope mr-3">
+        </i>
+        <span>
+         admin@raintamers.com
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="border-t border-blue-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+     <p class="text-blue-300 mb-4 md:mb-0">
+      © 2023 Rain Tamers. All rights reserved.
+     </p>
+     <div class="flex space-x-6">
+      <a class="text-blue-300 hover:text-white transition" href="#">
+       Privacy Policy
+      </a>
+      <a class="text-blue-300 hover:text-white transition" href="#">
+       Terms of Service
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <button class="fixed bottom-6 right-6 bg-blue-900 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300" id="backToTop">
+   <i class="fas fa-arrow-up">
+   </i>
+  </button>
+  <script>
+   // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Gutter type selection
+        document.querySelectorAll('.gutter-type').forEach(type => {
+            type.addEventListener('click', () => {
+                document.querySelectorAll('.gutter-type').forEach(t => t.classList.remove('active'));
+                type.classList.add('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+  </script>
+ </body>
+</html>
