@@ -1,1 +1,3 @@
 https://www.rain-tamers.com/*  https://rain-tamers.com/:splat  301!
+/thank-you                    /thank-you.html                 200
+/*                            /thank-you.html                 302!  Form=*
