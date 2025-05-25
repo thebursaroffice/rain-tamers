@@ -679,7 +679,7 @@
                 <h2 class="text-2xl font-bold text-blue-900 mb-6" id="contact-form">
                     Request a Free Quote
                 </h2>
-                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <!-- <form action="https://formsubmit.co/your-email@example.com" method="POST">
                     <input name="_subject" type="hidden" value="New Gutter Repair/Installation Quote Request" />
                     <input name="_next" type="hidden" value="https://yourwebsite.com/thank-you.html" />
                     <input name="_honey" style="display:none" type="text" />
@@ -764,7 +764,70 @@
                         Request
                         Quote
                     </button>
+                </form> -->
+                <form name="gutter-repair-installation" method="POST" netlify>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="name">Name*</label>
+                            <input
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="name" name="name" required type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Email*</label>
+                            <input
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="email" name="email" required type="email" />
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="phone">Phone*</label>
+                        <input
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            id="phone" name="phone" required type="tel" />
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="address">Property Address*</label>
+                        <input
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            id="address" name="address" required type="text" />
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Service Needed*</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center">
+                                <input class="mr-2" name="service[]" type="checkbox" value="Repairs" />
+                                <span>Gutter Repairs</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input class="mr-2" name="service[]" type="checkbox" value="New Installation" />
+                                <span>New Installation</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input class="mr-2" name="service[]" type="checkbox" value="Gutter Guards" />
+                                <span>Gutter Guards</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input class="mr-2" name="service[]" type="checkbox" value="Not Sure" />
+                                <span>Not Sure - Need Assessment</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="message">Additional Details</label>
+                        <textarea
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            id="message" name="message"
+                            placeholder="Describe your gutter issues, preferred materials, or any special requirements..."
+                            rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+                        type="submit">
+                        Request Quote
+                    </button>
                 </form>
+
             </div>
         </div>
     </section>
